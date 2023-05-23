@@ -1,0 +1,27 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "wsi",
+    "region"      : "us-east-1",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp3.1",
+    "function-runtime" : "dotnetcore3.1",
+    "function-memory-size" : 512,
+    "function-timeout"     : 900,
+    "function-handler"     : "AWSMailgunCallbackHandler::AWSMailgunCallbackHandler.Function::UpdateEmailStatus",
+    "function-name"        : "AWSMailgunCallbackHandler",
+    "function-description" : "Handles the Mailgun Messaging status callbacks used for Unify Messaging",
+    "package-type"         : "Zip",
+    "function-role"        : "arn:aws:iam::488729459845:role/service-role/AWSMailgunCallbackHandler-role-52iyirpy",
+    "tracing-mode"         : "PassThrough",
+    "environment-variables" : "",
+    "image-tag"             : "",
+    "function-subnets"      : "subnet-bcc4aa81,subnet-2d51d95b,subnet-6240e33a,subnet-05cf162f",
+    "function-security-groups" : "sg-461ac13e",
+    "function-architecture"    : "x86_64"
+}
